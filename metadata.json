@@ -1,0 +1,8 @@
+{
+  "name": "Responsive Car Website",
+  "description": "An interactive, responsive car showcase featuring dynamic sliders, GSAP animations, vehicle specifications, and sleek color themes.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

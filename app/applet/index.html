@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!-- Remix Icon -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!-- Swiper CSS -->
+      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+      <!-- Custom Stylesheet -->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>RaceCar Hypercar Group | Precision Aerodynamics & V-Max Engineering</title>
+      <meta name="description" content="Explore bespoke track hypercars engineered for world endurance. Interactive 360 studio configurator, live wind tunnel aerodynamics, Web Audio engine roar, and circuit telemetry.">
+      <meta property="og:title" content="RaceCar Hypercar Group | Precision Aerodynamics & V-Max Engineering">
+      <meta property="og:description" content="Explore bespoke track hypercars engineered for world endurance. Interactive 360 studio configurator, live wind tunnel aerodynamics, Web Audio engine roar, and circuit telemetry.">
+   </head>
+   <body class="carbon-grid-bg">
+      <!--==================== HEADER & TOP BAR ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <!-- Zone 1: Wordmark & Telemetry Status -->
+            <a href="#home" class="nav__logo" aria-label="RaceCar Hypercars">
+               <div class="nav__logo-badge">R</div>
+               <span class="nav__logo-text">RaceCar</span>
+               <span class="nav__logo-spec">V-MAX</span>
+            </a>
+
+            <!-- Zone 2: Navigation Links -->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active">Showroom</a>
+                  </li>
+                  <li>
+                     <a href="#configurator" class="nav__link">Studio 360°</a>
+                  </li>
+                  <li>
+                     <a href="#wind-tunnel" class="nav__link">Aerodynamics</a>
+                  </li>
+                  <li>
+                     <a href="#telemetry-battle" class="nav__link">Telemetry Battle</a>
+                  </li>
+                  <li>
+                     <a href="#engineering" class="nav__link">Chassis Lab</a>
+                  </li>
+                  <li>
+                     <a href="#broadcast" class="nav__link">Broadcast</a>
+                  </li>
+               </ul>
+
+               <!-- Mobile close button -->
+               <div class="nav__close" id="nav-close" aria-label="Close navigation">
+                  <i class="ri-close-line"></i>
+               </div>
+            </div>
+
+            <!-- Zone 3: Interactive Sound + Primary CTA Action -->
+            <div class="nav__actions">
+               <button class="nav__sound-trigger" id="sound-toggle-btn" title="Toggle Engine Audio Sound Synthesizer">
+                  <span class="nav__sound-bars" aria-hidden="true">
+                     <span class="sound-bar"></span>
+                     <span class="sound-bar"></span>
+                     <span class="sound-bar"></span>
+                  </span>
+                  <span id="sound-status-label">FX: ON</span>
+               </button>
+
+               <a href="#experience" class="nav__cta">Reserve Track Drive</a>
+
+               <!-- Mobile menu toggle -->
+               <div class="nav__toggle" id="nav-toggle" aria-label="Open navigation">
+                  <i class="ri-menu-4-line"></i>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HERO SHOWROOM STAGE ====================-->
+         <section class="home" id="home">
+            <div class="home__swiper swiper">
+               <div class="swiper-wrapper">
+                  <!-- CAR 1: APEX GT-V (ORANGE) -->
+                  <article class="home__article car__orange swiper-slide" data-car="apex">
+                     <div class="home__panel-1"></div>
+                     <div class="home__panel-2"></div>
+                     <div class="home__runway"></div>
+
+                     <div class="home__content container">
+                        <div class="home__data">
+                           <div class="home__titles">
+                              <h3 class="home__subtitle">Let’s</h3>
+                              <h1 class="home__title">APEX GT-V</h1>
+                              <div class="home__series-tag">
+                                 <i class="ri-flashlight-line"></i>
+                                 <span>Solid-State Quad-Motor Hypercar</span>
+                              </div>
+                           </div>
+
+                           <div class="home__image">
+                              <img src="assets/img/car-1.png" alt="Apex GT-V Hypercar in Sunset Orange" class="home__img" referrerPolicy="no-referrer">
+                           </div>
+                        </div>
+
+                        <div class="home__info">
+                           <div class="home__specs">
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">302 MPH</span>
+                                 <span class="home__spec-lbl">Top Velocity</span>
+                              </div>
+                              <div class="home__spec-sep"></div>
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">1.89 SEC</span>
+                                 <span class="home__spec-lbl">0 - 100 KM/H</span>
+                              </div>
+                              <div class="home__spec-sep"></div>
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">1,470 HP</span>
+                                 <span class="home__spec-lbl">Output Power</span>
+                              </div>
+                           </div>
+
+                           <div class="home__controls-wrap">
+                              <button type="button" class="btn-accent open-inspector-btn" data-model="apex">
+                                 <span>Inspect Specs</span>
+                                 <i class="ri-arrow-right-line"></i>
+                              </button>
+
+                              <button type="button" class="throttle-pedal-btn rev-sound-trigger" data-sound="hyper" title="Press & Hold to Rev Throttle">
+                                 <span class="pedal-rpm-indicator"></span>
+                                 <i class="ri-dashboard-3-line"></i>
+                                 <span>Hold Throttle (Rev)</span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+
+                  <!-- CAR 2: VERDANT RS (GREEN) -->
+                  <article class="home__article car__green swiper-slide" data-car="verdant">
+                     <div class="home__panel-1"></div>
+                     <div class="home__panel-2"></div>
+                     <div class="home__runway"></div>
+
+                     <div class="home__content container">
+                        <div class="home__data">
+                           <div class="home__titles">
+                              <h3 class="home__subtitle">Let’s</h3>
+                              <h1 class="home__title">VERDANT RS</h1>
+                              <div class="home__series-tag">
+                                 <i class="ri-fire-line"></i>
+                                 <span>Twin-Turbo Flat-Plane V8 Hybrid</span>
+                              </div>
+                           </div>
+
+                           <div class="home__image">
+                              <img src="assets/img/car-2.png" alt="Verdant RS Hypercar in Emerald Green" class="home__img" referrerPolicy="no-referrer">
+                           </div>
+                        </div>
+
+                        <div class="home__info">
+                           <div class="home__specs">
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">224 MPH</span>
+                                 <span class="home__spec-lbl">Top Velocity</span>
+                              </div>
+                              <div class="home__spec-sep"></div>
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">2.38 SEC</span>
+                                 <span class="home__spec-lbl">0 - 100 KM/H</span>
+                              </div>
+                              <div class="home__spec-sep"></div>
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">890 HP</span>
+                                 <span class="home__spec-lbl">V8 Hybrid</span>
+                              </div>
+                           </div>
+
+                           <div class="home__controls-wrap">
+                              <button type="button" class="btn-accent open-inspector-btn" data-model="verdant" style="background: var(--green-color); box-shadow: 0 6px 24px var(--green-glow);">
+                                 <span>Inspect Specs</span>
+                                 <i class="ri-arrow-right-line"></i>
+                              </button>
+
+                              <button type="button" class="throttle-pedal-btn rev-sound-trigger" data-sound="v8" title="Press & Hold to Rev Throttle" style="border-color: var(--green-color);">
+                                 <span class="pedal-rpm-indicator" style="background-color: var(--green-color);"></span>
+                                 <i class="ri-dashboard-3-line"></i>
+                                 <span>Hold Throttle (Rev)</span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+
+                  <!-- CAR 3: PHANTOM GT (BLUE) -->
+                  <article class="home__article car__blue swiper-slide" data-car="phantom">
+                     <div class="home__panel-1"></div>
+                     <div class="home__panel-2"></div>
+                     <div class="home__runway"></div>
+
+                     <div class="home__content container">
+                        <div class="home__data">
+                           <div class="home__titles">
+                              <h3 class="home__subtitle">Let’s</h3>
+                              <h1 class="home__title">PHANTOM GT</h1>
+                              <div class="home__series-tag">
+                                 <i class="ri-compass-3-line"></i>
+                                 <span>Long-Tail Active Aero Gran Turismo</span>
+                              </div>
+                           </div>
+
+                           <div class="home__image">
+                              <img src="assets/img/car-3.png" alt="Phantom GT Hypercar in Cobalt Blue" class="home__img" referrerPolicy="no-referrer">
+                           </div>
+                        </div>
+
+                        <div class="home__info">
+                           <div class="home__specs">
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">245 MPH</span>
+                                 <span class="home__spec-lbl">Top Velocity</span>
+                              </div>
+                              <div class="home__spec-sep"></div>
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">2.08 SEC</span>
+                                 <span class="home__spec-lbl">0 - 100 KM/H</span>
+                              </div>
+                              <div class="home__spec-sep"></div>
+                              <div class="home__spec-box">
+                                 <span class="home__spec-val tabular-nums">1,150 HP</span>
+                                 <span class="home__spec-lbl">Tri-Motor Aero</span>
+                              </div>
+                           </div>
+
+                           <div class="home__controls-wrap">
+                              <button type="button" class="btn-accent open-inspector-btn" data-model="phantom" style="background: var(--blue-color); box-shadow: 0 6px 24px var(--blue-glow);">
+                                 <span>Inspect Specs</span>
+                                 <i class="ri-arrow-right-line"></i>
+                              </button>
+
+                              <button type="button" class="throttle-pedal-btn rev-sound-trigger" data-sound="turbine" title="Press & Hold to Rev Throttle" style="border-color: var(--blue-color);">
+                                 <span class="pedal-rpm-indicator" style="background-color: var(--blue-color);"></span>
+                                 <i class="ri-dashboard-3-line"></i>
+                                 <span>Hold Throttle (Rev)</span>
+                              </button>
+                           </div>
+                        </div>
+                     </div>
+                  </article>
+               </div>
+            </div>
+
+            <!-- Interactivity: Social + Swiper Bullets -->
+            <div class="home__interaction">
+               <div class="home__social">
+                  <div class="home__social-border"></div>
+
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="Twitter">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="Instagram">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" class="home__social-link" aria-label="Facebook">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+               </div>
+
+               <!-- Pagination -->
+               <div class="swiper-pagination"></div>
+            </div>
+         </section>
+
+         <!--==================== SECTION: 360° BESPOKE CONFIGURATOR STUDIO ====================-->
+         <section class="section configurator" id="configurator">
+            <div class="container">
+               <div class="section__header">
+                  <span class="section__eyebrow">Atelier Commissioning</span>
+                  <h2 class="section__title">360° Bespoke Hypercar Configurator</h2>
+                  <p class="section__description">
+                     Tailor your machine to competition specifications. Select chassis livery, active aerodynamic configuration, and engrave your personalized carbon sill plate.
+                  </p>
+               </div>
+
+               <div class="configurator__layout">
+                  <!-- Visual Configurator Stage -->
+                  <div class="configurator__stage">
+                     <div class="configurator__stage-glow" id="cfg-glow" style="background-color: var(--orange-color);"></div>
+
+                     <div class="configurator__preview-wrap">
+                        <img src="assets/img/car-1.png" alt="Custom Configured Car" id="cfg-display-img" class="configurator__preview-img" referrerPolicy="no-referrer">
+                     </div>
+
+                     <!-- Telemetry bar below preview -->
+                     <div class="configurator__stage-overlay">
+                        <div class="configurator__stage-spec">
+                           <span class="stage-spec-model" id="cfg-display-name">Apex GT-V</span>
+                           <span class="stage-spec-edition" id="cfg-display-livery">Sunset Molten Amber · Spec II</span>
+                        </div>
+
+                        <div class="configurator__stage-metrics">
+                           <div class="stage-metric-box">
+                              <span class="stage-metric-val tabular-nums" id="cfg-weight">1,380 KG</span>
+                              <span class="stage-metric-lbl">Dry Curb Mass</span>
+                           </div>
+                           <div class="stage-metric-box">
+                              <span class="stage-metric-val tabular-nums" id="cfg-downforce-val">1,240 KG</span>
+                              <span class="stage-metric-lbl">Aero Downforce</span>
+                           </div>
+                           <div class="stage-metric-box">
+                              <span class="stage-metric-val tabular-nums" id="cfg-price">$2,850,000</span>
+                              <span class="stage-metric-lbl">Base Allocation</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Controls Panel -->
+                  <div class="configurator__panel">
+                     <!-- 1. Model & Paint Livery -->
+                     <div class="cfg-group">
+                        <div class="cfg-group__title">
+                           <span>01. Exterior Finish</span>
+                           <span id="cfg-color-name" style="color: var(--orange-color);">Solar Amber</span>
+                        </div>
+                        <div class="cfg-swatches">
+                           <button type="button" class="cfg-swatch active" data-car="apex" data-color="orange" data-title="Solar Amber" style="background: hsl(38, 98%, 52%);" aria-label="Solar Amber"></button>
+                           <button type="button" class="cfg-swatch" data-car="verdant" data-color="green" data-title="Emerald Racing" style="background: hsl(156, 95%, 42%);" aria-label="Emerald Racing"></button>
+                           <button type="button" class="cfg-swatch" data-car="phantom" data-color="blue" data-title="Cobalt Sapphire" style="background: hsl(212, 100%, 54%);" aria-label="Cobalt Sapphire"></button>
+                           <button type="button" class="cfg-swatch" data-car="apex" data-color="stealth" data-title="Obsidian Matte Carbon" style="background: #2a2d34;" aria-label="Obsidian Matte Carbon"></button>
+                           <button type="button" class="cfg-swatch" data-car="phantom" data-color="frost" data-title="Titanium Frost" style="background: #e2e8f0;" aria-label="Titanium Frost"></button>
+                        </div>
+                     </div>
+
+                     <!-- 2. Active Aero Profiles -->
+                     <div class="cfg-group">
+                        <div class="cfg-group__title">
+                           <span>02. Aerodynamic Package</span>
+                        </div>
+                        <div class="cfg-mode-grid">
+                           <div class="cfg-mode-card" data-mode="vmax">
+                              <div class="cfg-mode-title">V-Max Low-Drag</div>
+                              <div class="cfg-mode-desc">0.24 Cd · 302 MPH</div>
+                           </div>
+                           <div class="cfg-mode-card active" data-mode="track">
+                              <div class="cfg-mode-title">Track Attack</div>
+                              <div class="cfg-mode-desc">1,240 kg Load</div>
+                           </div>
+                           <div class="cfg-mode-card" data-mode="airbrake">
+                              <div class="cfg-mode-title">Airbrake Aero</div>
+                              <div class="cfg-mode-desc">Dynamic Flaps</div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- 3. Personalized Carbon Sill Plate Inscription -->
+                     <div class="cfg-group">
+                        <div class="cfg-group__title">
+                           <span>03. Cockpit Chassis Plaque</span>
+                        </div>
+                        <div class="cfg-sill-plate">
+                           <label for="sill-text-input" class="sill-plate-label">Custom Engraving (Handcrafted in Solihull)</label>
+                           <input type="text" id="sill-text-input" class="sill-plate-input" value="SPECIALLY COMMISSIONED FOR DRIVER 01" maxlength="42">
+                        </div>
+                     </div>
+
+                     <!-- Actions -->
+                     <div class="cfg-actions">
+                        <a href="#experience" class="btn-accent" style="flex: 1;">
+                           <span>Lock Build & Reserve</span>
+                           <i class="ri-check-line"></i>
+                        </a>
+                        <button type="button" class="btn-glass" id="cfg-play-sound-btn" title="Simulate Engine Sound of this Build">
+                           <i class="ri-volume-up-line"></i>
+                           <span>Acoustic Test</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SECTION: LIVE WIND TUNNEL SIMULATOR ====================-->
+         <section class="section wind-tunnel" id="wind-tunnel">
+            <div class="container">
+               <div class="section__header">
+                  <span class="section__eyebrow">Fluid Dynamics Laboratory</span>
+                  <h2 class="section__title">Virtual Wind Tunnel Aerodynamics</h2>
+                  <p class="section__description">
+                     Adjust air velocity up to 302 MPH to simulate ground-effect Venturi tunnel flow, rear wing boundary layers, and laminar airflow pressure vectors in real time.
+                  </p>
+               </div>
+
+               <div class="tunnel__canvas-card">
+                  <!-- HUD Overlays -->
+                  <div class="tunnel__hud-header">
+                     <span class="tunnel__hud-badge">
+                        Streamline Particle Telemetry
+                     </span>
+
+                     <div class="tunnel__hud-telemetry">
+                        <div class="tunnel__telemetry-item">
+                           <span>DRAG FORCE:</span>
+                           <span class="tabular-nums" id="hud-drag-force">2,410 N</span>
+                        </div>
+                        <div class="tunnel__telemetry-item">
+                           <span>TOTAL DOWNFORCE:</span>
+                           <span class="tabular-nums" id="hud-downforce">1,240 KG</span>
+                        </div>
+                        <div class="tunnel__telemetry-item">
+                           <span>EFFICIENCY (L/D):</span>
+                           <span class="tabular-nums" id="hud-efficiency">4.82</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Canvas for high performance aerodynamic particles -->
+                  <canvas id="tunnel-canvas"></canvas>
+
+                  <!-- Controls Bar -->
+                  <div class="tunnel__controls-bar">
+                     <div class="tunnel__speed-slider-wrap">
+                        <span class="tunnel__slider-label">Wind Velocity:</span>
+                        <input type="range" min="50" max="486" value="250" class="tunnel-slider" id="wind-speed-slider">
+                        <span class="tunnel__slider-val tabular-nums" id="wind-speed-display">250 KM/H</span>
+                     </div>
+
+                     <div class="tunnel__toggles">
+                        <button type="button" class="tunnel-toggle-btn active" id="toggle-streamlines" data-mode="stream">Laser Flowlines</button>
+                        <button type="button" class="tunnel-toggle-btn" id="toggle-smoke" data-mode="smoke">Aero Smoke Wand</button>
+                        <button type="button" class="tunnel-toggle-btn" id="tunnel-car-toggle">Swap Car (Apex / Verdant / Phantom)</button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SECTION: GHOST LAP BATTLE & TELEMETRY ====================-->
+         <section class="section telemetry-battle" id="telemetry-battle">
+            <div class="container">
+               <div class="section__header">
+                  <span class="section__eyebrow">Circuit Benchmark</span>
+                  <h2 class="section__title">Nürburgring Nordschleife Lap Time Battle</h2>
+                  <p class="section__description">
+                     Direct telemetry comparison across the 20.832 km Green Hell. Analyze sector micro-deltas, high-speed apex G-forces, and brake thermal dissipation.
+                  </p>
+               </div>
+
+               <div class="battle__grid">
+                  <!-- Leaderboard & Sector Splits -->
+                  <div class="battle__card">
+                     <div class="battle__circuit-header">
+                        <div>
+                           <h3 class="circuit-name">Nordschleife Record Attempt</h3>
+                           <p class="circuit-meta">20.832 km · 73 Corners · Asphalt Dry (22°C)</p>
+                        </div>
+                        <span class="tabular-nums" style="color: var(--orange-color); font-family: var(--mono-font); font-weight: 700;">FIA CERTIFIED</span>
+                     </div>
+
+                     <div class="battle__laps-list">
+                        <!-- Car 1: Apex GT-V -->
+                        <div class="lap-entry p1">
+                           <div class="lap-car-info">
+                              <span class="lap-rank">01</span>
+                              <div>
+                                 <div class="lap-model-name">Apex GT-V (Quad Electric)</div>
+                                 <span class="lap-class-tag" style="color: var(--orange-color);">Solid-State Torque Vectoring</span>
+                              </div>
+                           </div>
+                           <div class="lap-time-stat">
+                              <div class="lap-time-value tabular-nums">5:58.214</div>
+                              <div class="lap-time-delta">RECORD BENCHMARK</div>
+                           </div>
+                        </div>
+
+                        <!-- Car 2: Phantom GT -->
+                        <div class="lap-entry">
+                           <div class="lap-car-info">
+                              <span class="lap-rank">02</span>
+                              <div>
+                                 <div class="lap-model-name">Phantom GT (Aero Gran Turismo)</div>
+                                 <span class="lap-class-tag" style="color: var(--blue-color);">Active Venturi Underfloor</span>
+                              </div>
+                           </div>
+                           <div class="lap-time-stat">
+                              <div class="lap-time-value tabular-nums">6:04.118</div>
+                              <div class="lap-time-delta" style="color: var(--text-faint);">+5.904s</div>
+                           </div>
+                        </div>
+
+                        <!-- Car 3: Verdant RS -->
+                        <div class="lap-entry">
+                           <div class="lap-car-info">
+                              <span class="lap-rank">03</span>
+                              <div>
+                                 <div class="lap-model-name">Verdant RS (Twin-Turbo V8 Hybrid)</div>
+                                 <span class="lap-class-tag" style="color: var(--green-color);">High-Downforce Cup Package</span>
+                              </div>
+                           </div>
+                           <div class="lap-time-stat">
+                              <div class="lap-time-value tabular-nums">6:09.452</div>
+                              <div class="lap-time-delta" style="color: var(--text-faint);">+11.238s</div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Telemetry Readouts -->
+                     <div class="battle__telemetry-readouts">
+                        <div class="readout-box">
+                           <div class="readout-val tabular-nums" id="tele-gforce">2.18 G</div>
+                           <div class="readout-lbl">Peak Lateral Grip (Flugplatz)</div>
+                        </div>
+                        <div class="readout-box">
+                           <div class="readout-val tabular-nums" id="tele-apex-speed">294 KM/H</div>
+                           <div class="readout-lbl">Apex Speed (Schwedenkreuz)</div>
+                        </div>
+                        <div class="readout-box">
+                           <div class="readout-val tabular-nums" id="tele-braking">-1.92 G</div>
+                           <div class="readout-lbl">Deceleration (Aremberg)</div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!-- Visual Lap Telemetry Track & Car Profile -->
+                  <div class="battle__card" style="justify-content: space-between;">
+                     <div>
+                        <div class="battle__circuit-header">
+                           <div>
+                              <h3 class="circuit-name">Circuit de Spa-Francorchamps</h3>
+                              <p class="circuit-meta">Eau Rouge & Raidillon Telemetry Trace</p>
+                           </div>
+                           <button type="button" class="btn-glass" id="simulate-lap-btn" style="padding: 0.4rem 1rem;">
+                              <i class="ri-play-line"></i>
+                              <span>Run Ghost Lap</span>
+                           </button>
+                        </div>
+
+                        <div style="margin-top: 1.5rem; position: relative; border-radius: 1rem; overflow: hidden; border: 1px solid var(--black-border);">
+                           <img src="assets/img/racing_circuit_track_1790509077228.jpg" alt="Aerial view of Grand Prix race track curves at sunset" style="width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block;" referrerPolicy="no-referrer">
+                           <div style="position: absolute; inset: 0; background: linear-gradient(180deg, transparent 40%, rgba(6, 8, 11, 0.9) 100%); display: flex; flex-direction: column; justify-content: flex-end; padding: 1.25rem;">
+                              <span style="font-size: var(--smaller-font-size); font-family: var(--mono-font); color: var(--orange-color);">LIVE GHOST TRACE IN PROGRESS</span>
+                              <div style="display: flex; justify-content: space-between; align-items: center;">
+                                 <span style="font-weight: 700; font-family: var(--display-font);">Eau Rouge Compression: Flat-Out</span>
+                                 <span class="tabular-nums" style="font-family: var(--mono-font); color: var(--white); font-weight: 700;">312 km/h</span>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+
+                     <!-- Telemetry Audio Trigger -->
+                     <div style="display: flex; gap: 1rem; margin-top: 1.5rem;">
+                        <button type="button" class="btn-accent" style="flex: 1;" id="telemetry-listen-btn">
+                           <i class="ri-sound-module-line"></i>
+                           <span>Listen to Hot-Lap Onboard Audio</span>
+                        </button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SECTION: ENGINEERING & CHASSIS LAB ====================-->
+         <section class="section engineering" id="engineering">
+            <div class="container">
+               <div class="section__header">
+                  <span class="section__eyebrow">Aeronautical Metallurgy</span>
+                  <h2 class="section__title">Carbon Monocoque & Advanced Chassis</h2>
+                  <p class="section__description">
+                     Crafted with dry autoclave carbon fiber, 3D-printed titanium suspension uprights, and direct-cooled solid state battery modules.
+                  </p>
+               </div>
+
+               <!-- Interactive Monocoque Chassis Hero -->
+               <div class="engineering__visual-card">
+                  <img src="assets/img/hypercar_chassis_engineering_1790509035201.jpg" alt="Carbon fiber hypercar monocoque chassis inside aerodynamic wind tunnel with cyan and amber laser lines" class="engineering__media" referrerPolicy="no-referrer">
+                  
+                  <!-- Hotspot Interactive Points -->
+                  <div class="hotspot-dot" style="top: 36%; left: 24%;" data-info="Aerospace Inboard Pushrod: Multi-rate electronically valved Öhlins TTX dampers directly bolted to the carbon monocoque.">1</div>
+                  <div class="hotspot-dot" style="top: 52%; left: 54%;" data-info="Carbon Passenger Safety Cell: 72,000 Nm/deg torsional stiffness, providing extreme structural safety.">2</div>
+                  <div class="hotspot-dot" style="top: 44%; left: 78%;" data-info="900V Solid-State Battery Block: Immersion dielectric cooled with instant 1.5 MW discharge capability.">3</div>
+
+                  <div class="engineering__overlay">
+                     <span class="section__eyebrow" style="margin-bottom: 0.35rem; color: #00f0ff;">Monocoque Inspection</span>
+                     <h3 style="font-family: var(--display-font); font-size: 1.85rem; font-weight: 800; color: var(--white);" id="hotspot-label">
+                        Click numbered hotspots to inspect aerospace components
+                     </h3>
+                  </div>
+               </div>
+
+               <!-- Engineering Gallery -->
+               <div class="engineering__gallery">
+                  <!-- Gallery Card 1: Studio Front -->
+                  <div class="gallery-card">
+                     <img src="assets/img/hypercar_studio_front_1790509359129.jpg" alt="Front three-quarter view of futuristic hypercar in illuminated studio showroom" class="gallery-card-img" referrerPolicy="no-referrer">
+                     <div class="gallery-card-info">
+                        <h4 class="gallery-card-title">Sculptural Aerodynamics</h4>
+                        <p class="gallery-card-desc">Low-drag front splitter with integrated high-pressure vortex generators.</p>
+                     </div>
+                  </div>
+
+                  <!-- Gallery Card 2: Wheel & Brake Rotor -->
+                  <div class="gallery-card">
+                     <img src="assets/img/hypercar_wheel_brake_1790509375983.jpg" alt="Close-up of forged carbon racing wheel with glowing carbon ceramic brake rotor" class="gallery-card-img" referrerPolicy="no-referrer">
+                     <div class="gallery-card-info">
+                        <h4 class="gallery-card-title">420mm Carbon Ceramics</h4>
+                        <p class="gallery-card-desc">Monobloc 8-piston titanium calipers with continuous 1,000°C thermal envelope.</p>
+                     </div>
+                  </div>
+
+                  <!-- Gallery Card 3: Cockpit Interior -->
+                  <div class="gallery-card">
+                     <img src="assets/img/hypercar_cockpit_interior_1790509053034.jpg" alt="Hypercar cockpit view with forged carbon steering wheel and telemetry HUD display" class="gallery-card-img" referrerPolicy="no-referrer">
+                     <div class="gallery-card-info">
+                        <h4 class="gallery-card-title">Forged Carbon Yoke</h4>
+                        <p class="gallery-card-desc">Bespoke tactile rotary controls for traction vectoring, ABS, and DRS flap deployment.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SECTION: WORLD BROADCAST SCHEDULE ====================-->
+         <section class="section broadcast" id="broadcast">
+            <div class="container">
+               <div class="section__header">
+                  <span class="section__eyebrow">World Endurance Championship</span>
+                  <h2 class="section__title">Global Telemetry & TV Broadcasts</h2>
+                  <p class="section__description">
+                     Follow the factory team worldwide with 4K cockpit onboard cameras, tire thermal matrix feeds, and live pit garage comms.
+                  </p>
+               </div>
+
+               <div class="broadcast__grid">
+                  <!-- Live Race Card -->
+                  <div class="broadcast__card live">
+                     <div>
+                        <div class="broadcast__status">
+                           <span class="live-badge">
+                              <span class="live-dot" aria-hidden="true"></span>
+                              LIVE STREAMING
+                           </span>
+                           <span class="tabular-nums" style="font-family: var(--mono-font); font-size: var(--smaller-font-size); color: var(--text-muted);">Sky Sports F1 4K</span>
+                        </div>
+                        <h3 style="font-family: var(--display-font); font-size: 1.4rem; font-weight: 800; margin-block: 0.75rem 0.35rem; color: var(--white);">Le Mans 24 Hours Hypercar Cup</h3>
+                        <p style="color: var(--text-muted); font-size: var(--small-font-size);">Circuit de la Sarthe, France · Hour 18 of 24</p>
+                     </div>
+
+                     <div class="broadcast__telemetry-feed">
+                        <div>
+                           <div class="feed-stat-title">Car #01 (Apex)</div>
+                           <div class="feed-stat-val">P1 Overall</div>
+                        </div>
+                        <div>
+                           <div class="feed-stat-title">Tire Temps</div>
+                           <div class="feed-stat-val">98°C / 102°C</div>
+                        </div>
+                        <div>
+                           <div class="feed-stat-title">Pit Window</div>
+                           <div class="feed-stat-val">Lap 268</div>
+                        </div>
+                     </div>
+
+                     <button type="button" class="btn-accent stream-modal-btn" data-event="Le Mans 24h" style="width: 100%;">
+                        <i class="ri-play-circle-line"></i>
+                        <span>Launch 4K Onboard Cam</span>
+                     </button>
+                  </div>
+
+                  <!-- Race 2 -->
+                  <div class="broadcast__card">
+                     <div>
+                        <div class="broadcast__status">
+                           <span class="tabular-nums" style="font-family: var(--mono-font); font-size: var(--smaller-font-size); color: var(--orange-color);">OCTOBER 18</span>
+                           <span class="tabular-nums" style="font-family: var(--mono-font); font-size: var(--smaller-font-size); color: var(--text-muted);">DAZN Motorsport</span>
+                        </div>
+                        <h3 style="font-family: var(--display-font); font-size: 1.4rem; font-weight: 800; margin-block: 0.75rem 0.35rem; color: var(--white);">Nürburgring 1,000 KM Challenge</h3>
+                        <p style="color: var(--text-muted); font-size: var(--small-font-size);">Nürburgring Nordschleife, Germany</p>
+                     </div>
+
+                     <div class="broadcast__telemetry-feed">
+                        <div>
+                           <div class="feed-stat-title">Entry Spec</div>
+                           <div class="feed-stat-val">Verdant RS</div>
+                        </div>
+                        <div>
+                           <div class="feed-stat-title">Total Distance</div>
+                           <div class="feed-stat-val">1,000 km</div>
+                        </div>
+                        <div>
+                           <div class="feed-stat-title">Grid Position</div>
+                           <div class="feed-stat-val">Pole (P1)</div>
+                        </div>
+                     </div>
+
+                     <button type="button" class="btn-glass stream-modal-btn" data-event="Nürburgring 1000km" style="width: 100%;">
+                        <i class="ri-notification-3-line"></i>
+                        <span>Set Calendar Reminder</span>
+                     </button>
+                  </div>
+
+                  <!-- Race 3 -->
+                  <div class="broadcast__card">
+                     <div>
+                        <div class="broadcast__status">
+                           <span class="tabular-nums" style="font-family: var(--mono-font); font-size: var(--smaller-font-size); color: var(--blue-color);">NOVEMBER 08</span>
+                           <span class="tabular-nums" style="font-family: var(--mono-font); font-size: var(--smaller-font-size); color: var(--text-muted);">MotorTrend HD</span>
+                        </div>
+                        <h3 style="font-family: var(--display-font); font-size: 1.4rem; font-weight: 800; margin-block: 0.75rem 0.35rem; color: var(--white);">Monza V-Max Shootout</h3>
+                        <p style="color: var(--text-muted); font-size: var(--small-font-size);">Autodromo Nazionale Monza, Italy</p>
+                     </div>
+
+                     <div class="broadcast__telemetry-feed">
+                        <div>
+                           <div class="feed-stat-title">Entry Spec</div>
+                           <div class="feed-stat-val">Phantom GT</div>
+                        </div>
+                        <div>
+                           <div class="feed-stat-title">Speed Target</div>
+                           <div class="feed-stat-val">486 km/h</div>
+                        </div>
+                        <div>
+                           <div class="feed-stat-title">DRS System</div>
+                           <div class="feed-stat-val">Active V-Max</div>
+                        </div>
+                     </div>
+
+                     <button type="button" class="btn-glass stream-modal-btn" data-event="Monza Shootout" style="width: 100%;">
+                        <i class="ri-broadcast-line"></i>
+                        <span>Broadcaster Guide</span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SECTION: EXPERIENCE & TEST DRIVE RESERVATION ====================-->
+         <section class="section experience" id="experience">
+            <div class="container">
+               <div class="section__header">
+                  <span class="section__eyebrow">Private Paddock Session</span>
+                  <h2 class="section__title">Reserve Grand Prix Circuit Test Drive</h2>
+                  <p class="section__description">
+                     Take the wheel alongside certified factory test drivers on world-class FIA Grade 1 circuits. Full telemetry debrief, helmet comms, and race suit included.
+                  </p>
+               </div>
+
+               <div class="experience__wrapper">
+                  <!-- Visual Track Photo -->
+                  <div class="experience__media-panel">
+                     <img src="assets/img/racing_circuit_track_1790509077228.jpg" alt="Aerial view of Grand Prix racing circuit at sunset" class="experience__track-img" referrerPolicy="no-referrer">
+                     <div class="experience__media-content">
+                        <span class="section__eyebrow" style="color: var(--orange-color);">Exclusive Access</span>
+                        <h3 style="font-family: var(--display-font); font-size: 1.95rem; font-weight: 800; color: var(--white); margin-bottom: 0.5rem;">Silverstone & Spa Grand Prix Circuit</h3>
+                        <p style="color: var(--text-muted); font-size: var(--small-font-size);">Full pit-lane access, dedicated telemetry race engineer, and 1-on-1 performance coaching.</p>
+                     </div>
+                  </div>
+
+                  <!-- Booking Form -->
+                  <div class="experience__form-panel">
+                     <form class="booking__form" id="booking-form" novalidate>
+                        <div class="form__row">
+                           <div class="form__group">
+                              <label for="car-select" class="form__label">Vehicle Model</label>
+                              <select id="car-select" class="form__select" required>
+                                 <option value="Apex GT-V">Apex GT-V (Solar Amber · 302 MPH · 1,470 HP)</option>
+                                 <option value="Verdant RS">Verdant RS (Emerald Green · 890 HP Twin-Turbo V8)</option>
+                                 <option value="Phantom GT">Phantom GT (Cobalt Blue · 1,150 HP Aero GT)</option>
+                              </select>
+                           </div>
+
+                           <div class="form__group">
+                              <label for="circuit-select" class="form__label">Circuit Venue</label>
+                              <select id="circuit-select" class="form__select" required>
+                                 <option value="Silverstone GP Circuit (UK)">Silverstone GP Circuit (UK)</option>
+                                 <option value="Circuit de Spa-Francorchamps (Belgium)">Circuit de Spa-Francorchamps (Belgium)</option>
+                                 <option value="Nürburgring Nordschleife (Germany)">Nürburgring Nordschleife (Germany)</option>
+                                 <option value="WeatherTech Raceway Laguna Seca (USA)">Laguna Seca Raceway (USA)</option>
+                              </select>
+                           </div>
+                        </div>
+
+                        <div class="form__row">
+                           <div class="form__group">
+                              <label for="package-select" class="form__label">Experience Program</label>
+                              <select id="package-select" class="form__select" required>
+                                 <option value="VIP Full-Day Factory Immersion">VIP Full-Day Factory Immersion & Hot Laps</option>
+                                 <option value="Telemetry Masterclass & Debrief">Telemetry Masterclass & Debrief</option>
+                                 <option value="V-Max High Speed Runway Pass">V-Max High Speed Runway Pass</option>
+                              </select>
+                           </div>
+
+                           <div class="form__group">
+                              <label for="date-select" class="form__label">Preferred Session Date</label>
+                              <input type="date" id="date-select" class="form__input" required>
+                           </div>
+                        </div>
+
+                        <div class="form__row">
+                           <div class="form__group">
+                              <label for="client-name" class="form__label">Driver Full Name</label>
+                              <input type="text" id="client-name" class="form__input" placeholder="e.g. Christian Horner" required>
+                           </div>
+
+                           <div class="form__group">
+                              <label for="client-email" class="form__label">Email Address</label>
+                              <input type="email" id="client-email" class="form__input" placeholder="e.g. driver@racing.com" required>
+                           </div>
+                        </div>
+
+                        <button type="submit" class="btn-accent" style="width: 100%; padding: 1.1rem;">
+                           <i class="ri-steering-2-line"></i>
+                           <span>Confirm Paddock Reservation</span>
+                        </button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== MODALS ====================-->
+      <!-- 1. VIP Paddock Pass Confirmation Modal -->
+      <div class="modal" id="booking-modal" role="dialog" aria-modal="true" aria-labelledby="modal-booking-title">
+         <div class="modal__card">
+            <button type="button" class="modal__close" id="booking-modal-close" aria-label="Close modal">
+               <i class="ri-close-line"></i>
+            </button>
+            <div class="modal__icon">
+               <i class="ri-shield-check-line"></i>
+            </div>
+            <h3 class="modal__title" id="modal-booking-title" style="font-family: var(--display-font); font-size: 1.6rem; font-weight: 800; color: var(--white); margin-bottom: 0.5rem;">
+               VIP Paddock Pass Confirmed
+            </h3>
+            <p style="font-size: var(--small-font-size); color: var(--text-muted); line-height: 1.6;">
+               Your private circuit reservation has been registered with RaceCar Factory Track Operations. Our race director will contact you with FIA briefing protocols.
+            </p>
+
+            <div class="modal__ticket">
+               <div class="ticket-row">
+                  <span>Hypercar Model:</span>
+                  <span id="ticket-car">Apex GT-V</span>
+               </div>
+               <div class="ticket-row">
+                  <span>Grand Prix Circuit:</span>
+                  <span id="ticket-circuit">Silverstone GP Circuit</span>
+               </div>
+               <div class="ticket-row">
+                  <span>Session Date:</span>
+                  <span id="ticket-date">2026-10-24</span>
+               </div>
+               <div class="ticket-row">
+                  <span>Driver Name:</span>
+                  <span id="ticket-guest">Christian Horner</span>
+               </div>
+               <div class="ticket-row">
+                  <span>Paddock Credential:</span>
+                  <span class="tabular-nums" id="ticket-code" style="color: var(--orange-color);">RC-9942-VIP</span>
+               </div>
+            </div>
+
+            <button type="button" class="btn-primary" style="width: 100%;" id="modal-confirm-btn">
+               <span>Return to Showroom</span>
+            </button>
+         </div>
+      </div>
+
+      <!-- 2. Technical Dossier Inspector Modal -->
+      <div class="modal" id="inspector-modal" role="dialog" aria-modal="true" aria-labelledby="modal-inspector-title">
+         <div class="modal__card" style="max-width: 680px;">
+            <button type="button" class="modal__close" id="inspector-modal-close" aria-label="Close modal">
+               <i class="ri-close-line"></i>
+            </button>
+            <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--black-border); padding-bottom: 1.25rem; margin-bottom: 1.75rem;">
+               <div>
+                  <span class="section__eyebrow" id="inspector-class" style="margin-bottom: 0.2rem;">Formula E-Hypercar Division</span>
+                  <h3 id="inspector-title" style="font-family: var(--display-font); font-size: 1.85rem; font-weight: 800; color: var(--white);">Apex GT-V</h3>
+               </div>
+               <button type="button" class="btn-glass rev-sound-trigger" id="inspector-rev-btn" style="padding: 0.5rem 1rem;">
+                  <i class="ri-volume-up-line"></i>
+                  <span>Test Rev</span>
+               </button>
+            </div>
+
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;" id="inspector-grid">
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-speed">302 MPH</div>
+                  <div class="readout-lbl">V-Max Velocity</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-accel">1.89 SEC</div>
+                  <div class="readout-lbl">0 - 100 KM/H</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-power">1,470 HP</div>
+                  <div class="readout-lbl">System Power</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-torque">1,680 NM</div>
+                  <div class="readout-lbl">Max Torque</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-weight">1,380 KG</div>
+                  <div class="readout-lbl">Curb Weight</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-brakes">420mm Ceramic</div>
+                  <div class="readout-lbl">Brembo Rotors</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-downforce">1,240 KG</div>
+                  <div class="readout-lbl">Aero Downforce</div>
+               </div>
+               <div class="readout-box">
+                  <div class="readout-val tabular-nums" id="insp-aero">0.24 Cd</div>
+                  <div class="readout-lbl">Drag Coefficient</div>
+               </div>
+            </div>
+
+            <div style="margin-top: 1.75rem; display: flex; justify-content: flex-end; gap: 1rem;">
+               <a href="#configurator" class="btn-accent" id="inspector-configure-cta">
+                  <span>Open In 360° Studio</span>
+                  <i class="ri-arrow-right-line"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+
+      <!-- Toast Feedback -->
+      <div class="sound-toast" id="sound-toast" aria-live="polite">
+         <i class="ri-flashlight-line" style="color: var(--orange-color);"></i>
+         <span id="sound-toast-text">Engine sound synthesized</span>
+      </div>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="container footer__container">
+            <div class="footer__top">
+               <div class="footer__brand">
+                  <span style="font-family: var(--display-font); font-size: 1.6rem; font-weight: 900; color: var(--white); letter-spacing: -0.04em;">RaceCar Hypercars</span>
+                  <p class="footer__motto">Pioneering solid-state electric powertrains, active boundary-layer aerodynamics, and world championship track performance.</p>
+               </div>
+
+               <nav class="footer__nav" aria-label="Footer navigation">
+                  <a href="#home" class="footer__link">Showroom</a>
+                  <a href="#configurator" class="footer__link">360° Atelier</a>
+                  <a href="#wind-tunnel" class="footer__link">Aerodynamics</a>
+                  <a href="#telemetry-battle" class="footer__link">Telemetry</a>
+                  <a href="#engineering" class="footer__link">Chassis</a>
+                  <a href="#broadcast" class="footer__link">Broadcast</a>
+                  <a href="#experience" class="footer__link">Reserve</a>
+               </nav>
+            </div>
+
+            <div class="footer__bottom">
+               <p>&copy; 2026 RaceCar Hypercar Group S.p.A. All rights reserved. Precision Automotive Engineering.</p>
+
+               <div class="footer__socials">
+                  <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+                  <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+                  <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                     <i class="ri-youtube-line"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+      <!-- GSAP Core -->
+      <script src="assets/js/gsap.min.js"></script>
+
+      <!-- Swiper Slider JS -->
+      <script src="assets/js/swiper-bundle.min.js"></script>
+
+      <!-- Main Application Logic & Wind Tunnel Simulator -->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>

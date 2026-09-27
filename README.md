@@ -1,11 +1,23 @@
-<div align="center">
+# Responsive Car Website
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+An interactive, responsive car showcase featuring dynamic sliders, GSAP animations, vehicle specifications, and sleek color themes.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- Mobile-first, fully responsive design
+- Interactive multi-car slider powered by Swiper JS
+- Smooth entrance and reveal animations powered by GSAP
+- Color theme transitions matching each showcased vehicle
+- Specs and interactive buttons with hover animations
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- HTML5, CSS3, JavaScript (ES6+)
+- Swiper.js, GSAP
+- Remix Icon
+- Express static server (Node.js)
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Getting Started
+```bash
+npm install
+npm run dev
+```
+The server will start on `http://0.0.0.0:3000`.
